@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dados Pessoais</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Insira seus dados abaixo para poder continuar!</h1>
+      <p>Preencha todos os campos abaixo:</p>
+
+      <form class="formulario">
+        <label>
+          Nome
+          <input type="text" name="nome" value="{{pessoa.nome}}" />
+        </label>
+
+        <label>
+          Gmail
+          <input type="email" name="gmail" value="{{pessoa.gmail}}" />
+        </label>
+
+        <label>
+          Senha
+          <input type="password" name="senha" value="{{pessoa.senha}}" />
+        </label>
+
+        <label>
+          Idade
+          <input type="number" name="idade" value="{{pessoa.idade}}" />
+        </label>
+
+        <label>
+          Cidade
+          <input type="text" name="cidade" value="{{pessoa.cidade}}" />
+        </label>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <section class="info">
+        <h2>Informações do usuário</h2>
+        <p><strong>Nome:</strong> {{pessoa.nome}}</p>
+        <p><strong>Gmail:</strong> {{pessoa.gmail}}</p>
+        <p><strong>Idade:</strong> {{pessoa.idade}} anos</p>
+        <p><strong>Cidade:</strong> {{pessoa.cidade}}</p>
+      </section>
+    </main>
+  </body>
+</html>
